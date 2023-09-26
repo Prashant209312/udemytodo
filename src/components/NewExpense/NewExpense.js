@@ -7,11 +7,12 @@ function NewExpense(props) {
             ...enteredExpenseData,
             id: Math.random().toString()
         }
+        // console.log(expenseData)
         props.onAddExpense(expenseData);
     }
     return (
         <div className="new-expense">
-            <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+            <ExpenseForm onSaveExpenseData={saveExpenseDataHandeler} />
         </div>
     );
 
