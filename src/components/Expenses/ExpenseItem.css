@@ -2,10 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5rem;
     margin: 1rem 0;
-    border-radius: 12px;
     background-color: #4b4b4b;
 }
 
@@ -37,16 +35,16 @@
     border-radius: 12px;
 }
 
-@media (max-width:580px) {
+@media (min-width: 580px) {
     .expense-item__description {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        flex: 1
+        flex: 1;
     }
 
     .expense-item__description h2 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     .expense-item__price {
